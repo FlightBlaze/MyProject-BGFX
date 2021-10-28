@@ -41,7 +41,6 @@ int main()
     bgfxInit.resolution.height = height;
     bgfxInit.resolution.reset = BGFX_RESET_VSYNC;
 	bgfxInit.platformData = pd;
-	bgfxInit.
 
     bgfx::init(bgfxInit);
 
@@ -50,7 +49,7 @@ int main()
 		glfwPollEvents();
 		bgfx::touch(0);
 		bgfx::setViewClear(0, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x443355FF, 1.0f, 0);
-    	bgfx::setViewRect(0, 0, 0, width, height);
+		bgfx::setViewRect(0, 0, 0, width, height);
 		bgfx::frame();
 	}
 
