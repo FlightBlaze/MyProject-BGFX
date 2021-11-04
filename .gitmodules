@@ -10,3 +10,6 @@
 [submodule "submodules/bimg"]
 	path = submodules/bimg
 	url = https://github.com/bkaradzic/bimg.git
+[submodule "submodules/SDL"]
+	path = submodules/SDL
+	url = https://github.com/libsdl-org/SDL.git

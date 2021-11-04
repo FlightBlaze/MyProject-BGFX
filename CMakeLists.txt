@@ -15,6 +15,13 @@ target_include_directories(MyProject PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
 
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/assets/" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/assets/")
 
+# SDL
+
+option(SDL_METAL "" ON)
+add_subdirectory("submodules/SDL")
+target_include_directories(MyProject PRIVATE "submodules/SDL/include")
+target_link_libraries(MyProject SDL2-static)
+
 # GLFW
 
 add_subdirectory("submodules/glfw")
